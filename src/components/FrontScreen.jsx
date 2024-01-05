@@ -1,10 +1,11 @@
 import React from "react";
+import logoCat from "../assets/AI_Travel_Agent.png";
 
 const FrontScreen = ({ onBegin }) => {
   return (
     <div className="front-screen">
       <img
-        src="/src/assets/AI_Travel_Agent.png"
+        src={logoCat}
         alt="AI Travel Agent Logo"
         className="front-screen--logo"
       />

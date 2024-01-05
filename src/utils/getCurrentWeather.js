@@ -1,6 +1,6 @@
 export const getCurrentWeather = async (startDate, endDate, city) => {
-    const apiKey = import.meta.env.VITE_OPENWEATHER_API;
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&start=${startDate}&end=${endDate}&units=metric&appid=${apiKey}`;
+    const OWapiKey = import.meta.env.VITE_OPENWEATHER_API;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&start=${startDate}&end=${endDate}&units=metric&appid=${OWapiKey}`;
   
     try {
       const response = await fetch(apiUrl);

@@ -151,7 +151,7 @@ body {
 .booking-screen-inputs,
 .booking-screen--dtpicker,
 .booking-screen--value {
-  background: transparent;
+  background: #bbf7f7;
   text-align: center;
   width: 100%;
   height: 55px;

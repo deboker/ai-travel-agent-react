@@ -6,6 +6,9 @@ const openai = new OpenAI({
 });
 
 export const constructWeatherFromAI = async (weather) => {
+    const minTemp = Math.round(weather.main.temp_min);
+    const maxTemp = Math.round(weather.main.temp_max);
+    
     const weatherMessages = [
         {
             role: "system",
@@ -18,7 +21,7 @@ export const constructWeatherFromAI = async (weather) => {
     weatherMessages.push(
         {
             role: "user",
-            content: `Lowest Temperature in Celsius: ${weather.main.temp_min}, Highest Temperature in Celsius: ${weather.main.temp_max}, Weather Condition: ${weather.weather[0].description}, Location: ${weather.name}`
+            content: `Lowest Temperature in Celsius: ${minTemp}, Highest Temperature in Celsius: ${maxTemp}, Weather Condition: ${weather.weather[0].description}, Location: ${weather.name}`
         }
     )
     
@@ -28,6 +31,7 @@ export const constructWeatherFromAI = async (weather) => {
         temperature: 0.65,
         frequency_penalty: 0.5
     })
+    console.log(choices[0].message.content)
     return choices[0].message.content
 };
 

@@ -52,6 +52,7 @@ body {
   background: #4ddab5;
   transition: 0.25s all ease-in;
   cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .front-screen--button:hover,
@@ -60,6 +61,7 @@ body {
 .result-screen--button:hover {
   background: #246c5c;
   color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .front-screen--button {
@@ -98,6 +100,7 @@ body {
   border-radius: 50px;
   margin: 0px;
   padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .booking-screen--qty-button {
@@ -113,6 +116,7 @@ body {
   font-style: normal;
   transition: 0.25s all ease-in;
   cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .booking-screen--qty-button:hover {
@@ -158,6 +162,7 @@ body {
   border: 3px solid black;
   border-radius: 50px;
   font-size: 25px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .booking-screen--dtpicker {
@@ -216,6 +221,7 @@ body {
   font-weight: 700;
   line-height: normal;
   margin-bottom: 0.4rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .result-screen--date {
@@ -281,6 +287,7 @@ body {
   font-weight: 700;
   line-height: normal;
   margin: 0.4rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .result-screen--displays {

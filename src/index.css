@@ -63,7 +63,7 @@ body {
 }
 
 .front-screen--button {
-  width: 90%;
+  width: 85%;
 }
 
 /* Booking Screen */
@@ -142,7 +142,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  width: 80%;
+  width: 90%;
 }
 
 .booking-screen-inputs,
@@ -197,20 +197,22 @@ body {
 /* Result Screen */
 .result-screen {
   width: 100%;
+  display: flex;
+  align-self: center;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
-  padding-top: 20px;
+  padding-top: 0.6rem;
+  background: #f2ffff;
 }
 
 .result-screen--title {
   color: #000;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin: 0px;
+  margin-bottom: 0.4rem;
 }
 
 .result-screen--date {
@@ -218,6 +220,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0.8rem;
 }
 
 .result-screen--destination {
@@ -232,6 +235,7 @@ body {
   background: #bbf7f7;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   padding: 12px;
+  margin-bottom: 0.6rem;
 }
 
 .result-screen--dates {
@@ -273,7 +277,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin: 0px;
+  margin: 0.4rem;
 }
 
 .result-screen--displays {
@@ -292,5 +296,5 @@ body {
 
 .result-screen--button {
   width: 80%;
-  margin-bottom: 100px;
+  margin: 1.2rem 0 1.2rem 0;
 }

@@ -19,7 +19,7 @@ const App = () => {
     flyingTo: "",
     fromDate: "",
     toDate: "",
-    budget: 100,
+    budget: "",
     weatherDetails: null,
   }); // Structuring booking data
 
@@ -42,6 +42,14 @@ const App = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    if (
+      !bookingData.budget ||
+      isNaN(bookingData.budget) ||
+      bookingData.budget <= 0
+    ) {
+      alert("Please enter a valid budget amount.");
+      return;
+    }
     setCurrentScreen("loading");
     try {
       const weatherData = await getCurrentWeather(
@@ -84,7 +92,7 @@ const App = () => {
       flyingTo: "",
       fromDate: "",
       toDate: "",
-      budget: 100,
+      budget: "",
     });
     setCurrentScreen("front");
   };

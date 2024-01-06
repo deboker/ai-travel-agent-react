@@ -31,7 +31,6 @@ export const constructWeatherFromAI = async (weather) => {
         temperature: 0.65,
         frequency_penalty: 0.5
     })
-    console.log(choices[0].message.content)
     return choices[0].message.content
 };
 

@@ -2,7 +2,7 @@ import React from "react";
 
 const BookingScreen = ({ onSubmit, data, onInputChange, onNumberChange }) => {
   const handleBudgetChange = (event) => {
-    const budgetValue = event.target.value.replace(/^\$/, "");
+    const budgetValue = event.target.value.replace(/[^0-9]/g, "");
     onInputChange({
       ...event,
       target: { ...event.target, id: "budget", value: budgetValue },
@@ -85,7 +85,7 @@ const BookingScreen = ({ onSubmit, data, onInputChange, onNumberChange }) => {
           id="budget"
           value={`$${data.budget}`}
           onChange={handleBudgetChange}
-          min="1"
+          placeholder="$"
           required
         />
       </div>

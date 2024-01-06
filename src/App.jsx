@@ -43,14 +43,12 @@ const App = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     setCurrentScreen("loading");
-    console.log(bookingData);
     try {
       const weatherData = await getCurrentWeather(
         bookingData.fromDate,
         bookingData.toDate,
         bookingData.flyingTo
       );
-      console.log(weatherData);
       const weatherAiDetails = await constructWeatherFromAI(weatherData);
       const flightAiDetails = await constructFlightFromAI(bookingData);
       const accommodationAiDetails = await constructAccommodationFromAI(

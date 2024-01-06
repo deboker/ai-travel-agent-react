@@ -28,7 +28,6 @@ export const constructWeatherFromAI = async (weather) => {
         temperature: 0.65,
         frequency_penalty: 0.5
     })
-    console.log(choices[0].message.content)
     return choices[0].message.content
 };
 
@@ -55,7 +54,6 @@ export const constructFlightFromAI = async (flightData) => {
         temperature: 0.65,
         frequency_penalty: 0.5
     })
-    console.log(choices[0].message.content)
     return choices[0].message.content
 }
 
@@ -82,7 +80,6 @@ export const constructAccommodationFromAI = async (accommodationData) => {
         temperature: 0.65,
         frequency_penalty: 0.5
     })
-    console.log(choices[0].message.content)
     return choices[0].message.content
 }
 
@@ -109,6 +106,5 @@ export const constructActivitiesFromAI = async (activitiesData, weather) => {
         temperature: 0.65,
         frequency_penalty: 0.5
     })
-    console.log(choices[0].message.content)
     return choices[0].message.content
 }
